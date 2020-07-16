@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>W3school</title>
+    <style>
+        * {
+            font-family: tahoma;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        #header {
+            padding: 10px 12px;
+            height: 50px;
+        }
+
+        .header-p {
+            /* display: block; */
+            line-height: 1;
+            float: right;
+        }
+
+        .header-a {
+            text-decoration: none;
+            line-height: 1;
+            font-size: 37px;
+            letter-spacing: 3px;
+            color: #555555;
+            display: block;
+            float: left;
+        }
+
+        .header-span {
+            color: #4caf50;
+        }
+
+        #nav {
+            padding-top: 15px;
+            padding-left: 12px;
+            padding-right: 30px;
+            background-color: #4caf50;
+            height: 40px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        #nav-left {
+            float: left;
+        }
+
+        #nav-right {
+            /* padding-top: 10px; */
+            float: right;
+        }
+
+        .nav-ul {
+            list-style-type: none;
+        }
+
+        .nav-li {
+            font-size: 20px;
+
+            cursor: pointer;
+            display: inline-block;
+            padding-left: 50px;
+        }
+
+        .nav-li-a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .pl-0 {
+            padding-left: 0px;
+        }
+
+        #aside {
+            background-color: white;
+            width: 15%;
+            min-height: 600px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            position: absolute;
+            z-index: -1;
+        }
+
+        .aside-div {
+            padding: 10px 20px;
+        }
+
+        .aside-ul {
+            cursor: pointer;
+            list-style-type: none;
+        }
+
+        .li-header {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .li-item {
+            padding-bottom: 5px;
+            font-size: 16px;
+        }
+
+        #section {
+            float: right;
+            width: 85%;
+            padding: 30px 20px;
+            padding-left: 0;
+            padding-right: 0;
+            height: 500px;
+            position: relative;
+            z-index: -5;
+        }
+
+        .bg-gr {
+            background-color: #f0f0f0;
+        }
+
+        .section-left {
+            width: 50%;
+            float: left;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .section-right {
+            padding-top: 40px;
+            width: 48%;
+            height: 410px;
+            background-color: #f0f0f0;
+            float: left;
+            border-radius: 10px;
+            padding-left: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 12px;
+            text-decoration: none;
+            color: white;
+            background-color: #616161;
+        }
+
+        .btn-success {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 12px;
+            text-decoration: none;
+            border: none;
+            color: white;
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <a class="header-a" href="https://www.w3schools.com/">W3school<span class="header-span">.com</span></a>
+        </br>
+        <p class="header-p  ">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+    </header>
+    <nav id="nav">
+        <div id="nav-left">
+            <ul class="nav-ul">
+                <li class="nav-li pl-0"><a href="#" class="nav-li-a">TUTORIALS</a> </li>
+                <li class="nav-li"><a href="#" class="nav-li-a">REFERENCES</a> </li>
+                <li class="nav-li"><a href="#" class="nav-li-a">EXAMPLE</a> </li>
+                <li class="nav-li"><a href="#" class="nav-li-a">EXERCISE</a> </li>
+            </ul>
+        </div>
+        <div id="nav-right">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#" class="nav-li-a"><i class="fa fa-adjust" aria-hidden="true"></i></a></li>
+                <li class="nav-li"><a href="#" class="nav-li-a"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                <li class="nav-li"><a href="#" class="nav-li-a"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <aside id="aside">
+        <div class="aside-div">
+            <ul class="aside-ul">
+                <li class="li-header"><a>HTML and CSS</a></li>
+                <li class="li-item"><a>Learn HTML</a></li>
+                <li class="li-item"><a>Learn CSS</a></li>
+                <li class="li-item"><a>Learn BootStrap</a></li>
+                <li class="li-item"><a>Learn Jquery</a></li>
+                <li class="li-item"><a>Learn Reac</a>t</li>
+                <li class="li-item"><a>Lear ICON</a></li>
+                <li class="li-item"><a>Learn Angular</a></li>
+            </ul>
+        </div>
+        <div class="aside-div">
+            <ul class="aside-ul">
+                <li class="li-header"><a>HTML and CSS</a></li>
+                <li class="li-item"><a>Learn HTML</a></li>
+                <li class="li-item"><a>Learn CSS</a></li>
+                <li class="li-item"><a>Learn BootStrap</a></li>
+                <li class="li-item"><a>Learn Jquery</a></li>
+                <li class="li-item"><a>Learn Reac</a>t</li>
+                <li class="li-item"><a>Lear ICON</a></li>
+                <li class="li-item"><a>Learn Angular</a></li>
+            </ul>
+        </div>
+        <div class="aside-div">
+            <ul class="aside-ul">
+                <li class="li-header"><a>HTML and CSS</a></li>
+                <li class="li-item"><a>Learn HTML</a></li>
+                <li class="li-item"><a>Learn CSS</a></li>
+                <li class="li-item"><a>Learn BootStrap</a></li>
+                <li class="li-item"><a>Learn Jquery</a></li>
+                <li class="li-item"><a>Learn Reac</a>t</li>
+                <li class="li-item"><a>Lear ICON</a></li>
+                <li class="li-item"><a>Learn Angular</a></li>
+            </ul>
+        </div>
+        <div class="aside-div">
+            <ul class="aside-ul">
+                <li class="li-header"><a>HTML and CSS</a></li>
+                <li class="li-item"><a>Learn HTML</a></li>
+                <li class="li-item"><a>Learn CSS</a></li>
+                <li class="li-item"><a>Learn BootStrap</a></li>
+                <li class="li-item"><a>Learn Jquery</a></li>
+                <li class="li-item"><a>Learn Reac</a>t</li>
+                <li class="li-item"><a>Lear ICON</a></li>
+                <li class="li-item"><a>Learn Angular</a></li>
+            </ul>
+        </div>
+        <div class="aside-div">
+            <ul class="aside-ul">
+                <li class="li-header"><a>HTML and CSS</a></li>
+                <li class="li-item"><a>Learn HTML</a></li>
+                <li class="li-item"><a>Learn CSS</a></li>
+                <li class="li-item"><a>Learn BootStrap</a></li>
+                <li class="li-item"><a>Learn Jquery</a></li>
+                <li class="li-item"><a>Learn Reac</a>t</li>
+                <li class="li-item"><a>Lear ICON</a></li>
+                <li class="li-item"><a>Learn Angular</a></li>
+            </ul>
+        </div>
+    </aside>
+    <section id="section">
+        <div class="section-left">
+            <p style="font-size: 70px;">HTML</p>
+            <br>
+            <p style="font-size: 24px;">The language for building web pages</p>
+            <br>
+            <br>
+            <div>
+                <a href="#" class="btn">LEARN HTML</a>
+                <a href="#" class="btn">LEARN REFERENCE</a>
+            </div>
+        </div>
+        <div class="section-right">
+            <p style="font-size: 24px;">HTML Example</p>
+            <br>
+            <img src="img/phanmuc.png" style="width: 95%;" />
+            <br>
+            <br>
+            <button class="btn-success">Try it Yourself</button>
+        </div>
+    </section>
+
+    <section id="section" class="bg-gr">
+
+        <div class="section-right">
+            <p style="font-size: 24px;">HTML Example</p>
+            <br>
+            <img src="img/phanmuc.png" style="width: 95%;" />
+            <br>
+            <br>
+            <button class="btn-success">Try it Yourself</button>
+        </div>
+        <div class="section-left">
+            <p style="font-size: 70px;">HTML</p>
+            <br>
+            <p style="font-size: 24px;">The language for building web pages</p>
+            <br>
+            <br>
+            <div>
+                <a href="#" class="btn">LEARN HTML</a>
+                <a href="#" class="btn">LEARN REFERENCE</a>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
