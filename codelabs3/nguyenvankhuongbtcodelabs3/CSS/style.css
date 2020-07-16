@@ -1,0 +1,62 @@
+body{
+    width: 1000px;
+    margin: 0px auto;
+    color: white;
+}
+#header{
+    margin:0px 0px -25px 0px;
+    background-color:white;
+    height: 100px;
+}
+#menu{
+    height: 50px;
+    background-color:#00cc00;
+    width: 1000px;
+}
+#sidebar{
+    min-height: 1000px;
+    width: 200px;
+    background-color:#d9d9d9;
+    float: left;
+}
+#main{
+    min-height: 1000px;
+    width: 800px;
+    background-color: white;
+    float: left;
+    color: black;
+
+}
+#footer{
+    width: 1000px;
+    background-color: black;
+    line-height: 50px;
+}
+#header #w3school-logo {
+    color: #000;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+#header #w3school-logo .dotcom {
+    color: yellowgreen;
+}
+#header .slogan{
+    color: #000;
+    margin: 0px 0px 0px 615px;
+}
+#menu #text ul li{
+    list-style: none;
+    float: left;
+    margin-left: -20px;
+}
+#menu #text ul li a {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0px 50px 0px 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
