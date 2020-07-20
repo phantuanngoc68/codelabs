@@ -5,59 +5,187 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>W3 School</title>
+    <title>W3 Schools</title>
     <link rel="icon" href="mIMG/favicon.ico" type="image/x-icon">
-
     <style>
-        mlogo
+        #mlogo
         {
-            color:red;
-            font-family: fontawesome;
-            text-decoration: none;
-            line-height: 1;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-size: 37px;
-            letter-spacing: 3px;
-            display: block;
-            position: absolute;
-            top: 17px;
+    font-family: fontawesome, sans-serif;
+    text-decoration: none;  
+    line-height: 47px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #555555;
+    display: block;
+    position: relative;
+    font-weight: bold;
+    margin-top: 5px;
+    float:left;
+     }
+        #mnav
+        {
+            list-style-type: none;
+            background-color: #4CAF50;
+            line-height: 57px; 
+            height: 57px;
+            padding: 0px;
+            margin: 0px;
+            
         }
-        .mcolor
+        #mnav li
         {
-            color:red;
+            float:left;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-size:17px;
+            letter-spacing: 4px;
+            padding: 0px 16px;
+            border: none;
+            text-decoration: none;                
+        }
+        #w3
+        {
+            color: black;
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-size:15px;
+            letter-spacing: 4px;
+            padding: 0px 16px;
+            border: none;
+            text-decoration: none;
+            top: 10px;
+            float:none;
+            position: relative;
+        }
+             section
+        {
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-weight: 400;
+            margin: 10px 0px;
+            font-size: 20px;
+            padding: 0.01em 16px;
+            text-decoration: none;
+            color: #000;
+            vertical-align: middle;
+            line-height: 1.5;
+            width: 198px;
+        }
+        li a
+        {
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-weight: 400;
+            margin: 10px 0px;
+            font-size: 16px;
+            padding: 0.01em 16px;
+            text-decoration: none;
+            color: #000;
+            vertical-align: middle;
+            line-height: 1.5;
+            width:198px;
+            float:none;
+        }
+        #msection
+        {
+            float:right;
+            background-color:white;
+        }
+        #mh1
+        {
+    font-size: 80px;
+    color: #555555;
+    margin: 2px 0 -20px 0 !important;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
         }
     </style>
 </head>
 
-<body>
+<body style="margin: 0px;">
     <header>
-        <div>
-            <a id="mlogo" class="mcolor" href="https://www.w3schools.com/" >
-                W3 SCHOOL HOMPAGE
-
-            </a>
-            <span>
-                SELF-STUDY
-            </span>
-            <p>THE WORLD'S LARGEST WEBSITE</p>
+        <div style="padding: 8px 16px;">
+            <a id="mlogo" href="https://www.w3schools.com/";>w3schools<span style="color: #4CAF50">.com</span></a>
+            <div>
+            <p id="w3">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
         </div>
-<img src="mIMG/favicon.ico">
+        </div>
+     </header>
+    <div>    
         <nav>
-            <ul>
-                <li> TUTORIAL</li>
+            <ul id="mnav">
+                <li>TUTORIAL</li>
                 <li>REFERENCES</li>
                 <li>EXAMPLE</li>
                 <li>EXCERCISE</li>
             </ul>
         </nav>
+    </div>
 
-    </header>
-    <main>
-        <section> HTML </section>
-        <section> CSS </section>
-        <section> JavaScript </section>
+    <main style="float:left;">
+        <section>HTML and CSS</section>
+        <nav style="font-size:16px; list-style-type: none; text-decoration: none;">
+            <li><a href="https://www.w3schools.com/html/default.asp">Learn HTML</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">Learn CSS</a></li>
+            <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Learn Bootstrap</a></li>
+            <li><a href="https://www.w3schools.com/w3css/default.asp">Learn W3.CSS</a></li>
+            <li><a href="https://www.w3schools.com/colors/default.asp">Learn Colors</a></li>
+            <li><a href="https://www.w3schools.com/icons/default.asp">Learn Icons</a></li>
+            <li><a href="https://www.w3schools.com/graphics/default.asp">Learn Graphics</a></li>
+            <li><a href="https://www.w3schools.com/howto/default.asp">Learn How To</a></li>
+            <li><a href="https://www.w3schools.com/sass/default.asp">Learn Sass</a></li>
+        </nav>
+        <section>JavaScript</section>
+        <nav style="font-size:16px; list-style-type: none; text-decoration: none;">
+            <li><a href="https://www.w3schools.com/html/default.asp">Learn JavaScript</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">Learn jQuery</a></li>
+            <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Learn React</a></li>
+            <li><a href="https://www.w3schools.com/w3css/default.asp">Learn AngularJS</a></li>
+            <li><a href="https://www.w3schools.com/colors/default.asp">Learn JSON</a></li>
+            <li><a href="https://www.w3schools.com/icons/default.asp">Learn AJAX</a></li>
+            <li><a href="https://www.w3schools.com/graphics/default.asp">Learn W3.  JS</a></li>
+        </nav>
+        <section>Server Side</section>
+        <nav style="font-size:16px; list-style-type: none; text-decoration: none;">
+            <li><a href="https://www.w3schools.com/html/default.asp">Learn SQL</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">Learn PHP</a></li>
+            <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Learn ASP</a></li>
+            <li><a href="https://www.w3schools.com/w3css/default.asp">Learn Node.js</a></li>
+            <li><a href="https://www.w3schools.com/colors/default.asp">Learn RaspberryPi</a></li>
+        </nav>
+        <section>Programming</section>
+        <nav style="font-size:16px; list-style-type: none; text-decoration: none;">
+            <li><a href="https://www.w3schools.com/html/default.asp">Learn Python</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">Learn Java</a></li>
+            <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Learn C++</a></li>
+            <li><a href="https://www.w3schools.com/w3css/default.asp">Learn C#</a></li>
+            <li><a href="https://www.w3schools.com/colors/default.asp">Learn Machine Learning</a></li>
+        </nav>
+        <section>Web Building</section>
+        <nav style="font-size:16px; list-style-type: none; text-decoration: none;">
+         <li><a href="https://www.w3schools.com/html/default.asp">Web Templates</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">Web Statistics</a></li>
+            <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Web Certificates</a></li>
+            <li><a href="https://www.w3schools.com/w3css/default.asp">Web Edittor</a></li>
+            <li><a href="https://www.w3schools.com/colors/default.asp">Web Development</a></li>
+        </nav>
+        <section>XML Tutorials</section>
+         <nav style="font-size:16px; list-style-type: none; text-decoration: none;">
+            <li><a href="https://www.w3schools.com/html/default.asp">Learn XML</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">Learn XML AJAX</a></li>
+            <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">Learn DOM</a></li>
+            <li><a href="https://www.w3schools.com/w3css/default.asp">Learn XML DTD</a></li>
+            <li><a href="https://www.w3schools.com/colors/default.asp">Learn XML Schema</a></li>
+        </nav>
+        <section>Reference</section>
+        <section>Excercise</section>
     </main>
+    <section id="msection">
+    <h1 id="mh1">HTML</h1>
+        <p>The language for building webpages</p>
+        <div></div>
+    </section>
 <footer>
 </footer>
 </body>
