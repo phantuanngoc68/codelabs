@@ -22,7 +22,7 @@
     color:#4CAF50;
 }
 .intro{
-    font-size:18px;
+    font-size:16px;
     float:right;
     margin-top: 22px;
     margin-bottom:0
@@ -142,13 +142,14 @@
     margin-bottom: 20px;
 }
 .button{
-    background-color:darkslategray;
+    background-color:#616161;
     border:none;
-    padding:14px 16px;
+    padding:10px 16px;
     color:white;
     display:inline-block;
     margin-left: 10px;
     word-spacing: 3px;
+    font-size:16px;
 }
 .button:hover{
     background-color: lightgray;
