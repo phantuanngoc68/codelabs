@@ -37,6 +37,7 @@ font-style:normal;
         #mlogo:hover{
             color: #4CAF50;
         }
+        .greenbutton {background-color: #4CAF50;}
         #mnav
         {
             list-style-type: none;
@@ -112,20 +113,22 @@ font-style:normal;
         li:hover{
             background-color:#ccc;
         }
-        .msection
+        .whitesection
         {
             float:right;
             background-color:white;
             width:80%;
             margin-bottom: 16px;
         }
-        .msection>div
+        .whitesection>div
         {
             width:47.50%;
             margin:none;
         }
-        .mh1
+        .whitesection .mh1
         {
+            padding: 3%;
+        line-height: 1.5;
     font-size: 80px;
     color: #555555;
     margin: 2px 0 -20px 0 !important;
@@ -133,16 +136,16 @@ font-style:normal;
     font-weight: 400;
             text-align: center;
         }
-        .msection>div>p
+        .whitesection>div>p
         {
             text-align: center;
             font-size: 24px;
             color:#3a3a3a!important;
         }
-        .msection>div>a
+        .whitesection>div>a
         {
             padding:8px 16px;
-            background-color: #616161!important;
+            background-color: #616161;
             color: #fff!important;
             margin:5px;
             font-size: 16px;
@@ -150,7 +153,7 @@ font-style:normal;
             text-align: center;
             font-family: Verdana,sans-serif;
         }
-        .msection>div>a:hover{
+        .whitesection>div>a:hover{
             color:#000!important;background-color:#f1f1f1!important;
         }
         
@@ -180,6 +183,7 @@ font-style:normal;
                 font-family: Consolas,"courier new";
     font-size: 16px;
         }
+        
     </style>
 </head>
 
@@ -276,14 +280,14 @@ font-style:normal;
             <li><a href="https://www.w3schools.com/colors/default.asp">PHP Excercies</a></li>
         </nav>
     </main>
-    <section class="msection">
-        <div style="text-align: center;">
+    <section class="whitesection">
+        <div style="text-align: center;"> 
              <h1 class="mh1">HTML</h1>
              <p>The language for building webpages</p>
             <a href="https://www.w3schools.com/html/default.asp">LEARN HTML</a>
             <a href="https://www.w3schools.com/tags/default.asp">HTML REFERENCE</a>
         </div>
-        <div style="clear:both"></div>
+        
         <div class="example">
             <h3>HTML Example</h3>
             <div>
@@ -298,7 +302,32 @@ font-style:normal;
 <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
    </div>
                 </div>
-            
+            <a class="greenbutton" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">Try it Yourself >></a>
+        </div>
+    </section>
+    
+    <section class="whitesection" style="background-color:#f1f1f1!important;">
+     <div style="text-align: center; float:right;"> 
+             <h1 class="mh1">CSS</h1>
+             <p>The language for styling webpages</p>
+            <a href="https://www.w3schools.com/html/default.asp">LEARN CSS</a>
+            <a href="https://www.w3schools.com/tags/default.asp">CSS REFERENCE</a>
+        </div>
+        <div>
+        <div class="example" style="box-shadow: none; float:none;">
+            <h3>CSS Example</h3>
+            <div class="tagnamecolor"; style=" box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);"><span class="cssselectorcolor" style="color:brown">
+body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+&nbsp; font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> verdana<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+  </span></div>
+        </div>
+            <a class="greenbutton" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">Try it Yourself >></a>
         </div>
     </section>
 <footer>
