@@ -63,7 +63,7 @@
     background-color:white;
     color:black;
 }
-.subnav-content{
+#subnav-content{
     display:none;
     position:absolute;
     left:0;
@@ -72,24 +72,22 @@
     width:100%;
     z-index:1;
 }
-.subnav-content a{
+#subnav-content a{
     float:left;
     color:black;
     text-decoration:none;
 }
-.subnav-content h{
+#subnav-content h{
     float:left;
     color:black;
     text-decoration:none;
 }
 
-.subnav-content a:hover{
+#subnav-content a:hover{
     background-color:white;
     text-decoration:none;
 }
-.subnav:hover .subnav-content{
-    display:block;
-}
+
 .menu{
     list-style-type:none;
     padding:0;

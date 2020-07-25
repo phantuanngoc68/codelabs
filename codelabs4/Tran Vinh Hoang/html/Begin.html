@@ -9,7 +9,21 @@
     <link rel="icon" type="image.ico" href="favicon.ico">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="style.css">
+    <script>
+        var on=false;
+        function myFunction(){
 
+            if(on==false) {
+                document.getElementById("subnav-content").style.display = "block";
+                on=true;
+            }
+            else{
+                document.getElementById("subnav-content").style.display = "none";
+                on=false;
+            }
+
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -18,8 +32,8 @@
     </header>
     <div class ="nav">
         <div class="subnav">
-            <button class="subnavgt">TUTORIALS <i class='fas fa-angle-down'></i></button>
-            <div class="subnav-content">
+            <button class="subnavgt" type="button" onclick="myFunction()">TUTORIALS <i class='fas fa-angle-down'></i></button>
+            <div id="subnav-content">
                 <a href="#">HTML and CSS</a>
                 <a href="#">JavaScript</a>
                 <a href="#">Sever Side</a>
@@ -45,8 +59,8 @@
             </div>
         </div>
         <div class="subnav">
-            <button class="subnavgt">REFERENCES <i class='fas fa-angle-down'></i></button>
-            <div class="subnav-content">
+            <button button class="subnavgt" type="button" onclick="myFunction()">REFERENCES <i class='fas fa-angle-down'></i></button>
+            <div id="subnav-content">
                 <a href="#">HTML and CSS</a>
                 <a href="#">JavaScript</a>
                 <a href="#">Sever Side</a>
@@ -72,8 +86,8 @@
             </div>
         </div>
         <div class="subnav">
-            <button class="subnavgt">EXAMPLES <i class='fas fa-angle-down'></i></button>
-            <div class="subnav-content">
+            <button button class="subnavgt" type="button" onclick="myFunction()">EXAMPLES <i class='fas fa-angle-down'></i></button>
+            <div id="subnav-content">
                 <a href="#">HTML and CSS</a>
                 <a href="#">JavaScript</a>
                 <a href="#">HTML ASCII</a>
@@ -99,8 +113,8 @@
             </div>
         </div>
         <div class="subnav">
-            <button class="subnavgt">EXERCISES <i class='fas fa-angle-down'></i></button>
-            <div class="subnav-content">
+            <button button class="subnavgt" type="button" onclick="myFunction()">EXERCISES <i class='fas fa-angle-down'></i></button>
+            <div id="subnav-content">
                 <a href="#">HTML and CSS</a>
                 <a href="#">JavaScript</a>
                 <a href="#">Sever Side</a>
