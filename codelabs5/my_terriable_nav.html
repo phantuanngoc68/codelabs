@@ -25,17 +25,14 @@ text-align:center;
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        var active=false;
 $(document).ready(function(){
   $(".mainmenu>a").mouseenter(function(){
-  if (!active) {
   	$(".mainmenu>li").hide();
     $(this).siblings().show();     
-    } 
+    
   }); 
    $(".mainmenu>a").click(function(){
-  	$(".mainmenu>li").hide();
-    active=false;   
+  	$(".mainmenu>li").hide();   
   }); 
 });
     </script>
