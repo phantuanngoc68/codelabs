@@ -1,0 +1,61 @@
+<head>
+    <style>
+        .submenu {
+  display:none;
+  margin:15px;
+  transition:1s;
+  list-style:none;
+  border: 1px solid green;
+  text-align:center;
+}
+.mainmenu>a {
+  cursor:pointer;
+  width:100%;
+  text-align:center;
+  padding:5px;
+  border: 1px solid red;
+  display:block;
+
+}
+.maimmenu {
+text-align:center;
+  
+}
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var active=false;
+$(document).ready(function(){
+  $(".mainmenu>a").mouseenter(function(){
+  if (!active) {
+  	$(".mainmenu>li").hide();
+    $(this).siblings().show();     
+    } 
+  }); 
+   $(".mainmenu>a").click(function(){
+  	$(".mainmenu>li").hide();
+    active=false;   
+  }); 
+});
+    </script>
+</head>
+<body>
+<nav>
+  <ul class="mainmenu"><a>Menu1</a>
+  <li class="submenu">Sub-Menu1</li>
+    <li class="submenu">Sub-Menu2</li>
+      <li class="submenu">Sub-Menu3</li>
+  </ul>
+   <ul class="mainmenu"><a>Menu2</a>
+  <li class="submenu">Sub-Menu1</li>
+    <li class="submenu">Sub-Menu2</li>
+      <li class="submenu">Sub-Menu3</li>
+  </ul>
+   <ul class="mainmenu"><a>Menu3</a>
+  <li class="submenu">Sub-Menu1</li>
+    <li class="submenu">Sub-Menu2</li>
+      <li class="submenu">Sub-Menu3</li>
+  </ul>
+</nav>
+</body>
