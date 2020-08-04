@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.section-1 {
+    min-height: 63px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@font-face {
+    font-family: language-section-1;
+    src: url(../FONT/Sony_Sketch_Bold_205.ttf)
+}
+.left-section-1 {
+    font-family: language-section-1;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #555555;
+}
+.left-section-1 span {
+    color: #4CAF50;
+}
+.right-section-1 {
+    letter-spacing: 4px;
+}
+.content-section-1,
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    cursor: pointer;
+}
+@media screen and (max-width:992px) {
+    .section-1 {
+        text-align: center;
+    }
+    .content-section-1 {
+        display: inline-block;
+    }
+}
+.section-2 {
+    background-color: #4CAF50;
+    width: 100%;
+    min-height: 58px;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.content-section-2{
+    display: flex;
+}
+.left-section-2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    align-items: center;
+    min-height: 58px;
+}
+.left {
+    min-width: 67%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7px;
+    height: 100%;
+}
+.content-left-section-2 {
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-size: 17px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+@media screen and (max-width:1333px){
+    .content-left-section-2{
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+    .right-section-2 .right{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1130px){
+    .content-left-section-2{
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width:1034px){
+    .content-left-section-2{
+        letter-spacing: 0px;
+    }
+}
+@media screen and (max-width:940px){
+    .content-left-section-2{
+        letter-spacing: 0px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:800px){
+    .left-section-2{
+        display: none;
+    }
+    .content-section-2{
+        display: flex;
+        justify-content: flex-end;
+        min-height: 57px;
+    }
+    .section-2 .btnn{
+        display: block;
+        padding: 16px;
+    }
+}
+@media screen and (max-width:500px){
+    .section-2 .content-section-2 .right-section-2{
+        display: none;
+    }
+}
+.btnn{
+    position: absolute;
+    width: 53.15px;
+    height: 57px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.btnn:hover{
+    background-color: #ffffff;
+    color: black;
+}
+.right-section-2{
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+.right{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+.content-right-section-2{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+.content-left-section-2:hover {
+    color: black;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.content-right-section-2:hover{
+    color: black;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.tutorials, .references,.examples,.exercises{
+    position: absolute;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    background-color: #f1f1f1;
+    display: none;
+}
+.content-tutorials{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.close{
+    position: relative;
+}
+.close span{
+    position: absolute;
+    top:-7%;
+}
+.sub-tutorials ul li {
+    font-size: 16px;
+    font-weight: 500;
+}
+.sub-tutorials ul li:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.sub-tutorials ul{
+    line-height: 26px;
+}
+.section-3{
+    width: 100%;
+}
+.left-section-3{
+    width: 230px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    font-size: 16px;
+    line-height: 24px;
+    padding-left:  16px;
+    font-weight: 500;
+}
+.left-section-3 ul li:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.button {
+    width: 100%;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    height: 100%;
+    color:black;
+    display: none;
+}
+.close-button {
+    font-size: 24px;
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+}
+.cls{
+    position: absolute;
+    top:-6%;
+    right: -3%;
+}
+.close-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.close-button:hover{
+    background-color: #ccc;
+}
+.content-button{
+    font-size: 18px;
+    font-weight: 500;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 3px;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.btn-content-button{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.btn-content-button:hover{
+    background-color: #ccc;
+}
+.file-tutorials,
+.file-references,
+.file-examples,
+.file-exercises
+{
+    text-align: center;
+    display: none;
+    width: 100%;
+}
+.content-file-tutorials,
+.content-file-references,
+.content-file-examples,
+.content-file-exercises
+{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
