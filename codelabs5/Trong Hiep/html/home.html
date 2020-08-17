@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="/Trong Hiep/css/home.css">
+    <script type="text/javascript" src="/Trong Hiep/js/jquery-3.5.1.js"></script>
+    <script src="/Trong Hiep/js/home.js"></script>
 </head>
 <body>
     <header>
@@ -36,13 +38,37 @@
                 </h1>
                 <div class="navOptions">
                     <ul>
-                        <li class="mens">MENS<i class="material-icons md-16">expand_more</i></li>
+                        <li id="mens">
+                            MENS<i class="material-icons md-16">expand_more</i>
+                            <div id="sub-menu-1">
+                                <ul class="sub-left">
+                                    <li>CASUAL</li>
+                                    <li>Jackets</li>
+                                    <li>Hoodies and Sweatshirts</li>
+                                    <li>Polo Shirts</li>
+                                    <li>Sportswear</li>
+                                    <li>Trousers & Chinos</li>
+                                    <li>T-Shirts</li>
+                                </ul>
+                                <ul class="sub-right">
+                                    <li>FORMAL</li>
+                                    <li>Jackets</li>
+                                    <li>Shirts</li>
+                                    <li>Suits</li>
+                                    <li>Trousers</li>
+                                </ul>
+                                <div class="sale-off-noti">
+                                    <h2>AUTUMN SALE!</h2>
+                                    <h2>UP TO 50% OFF</h2>
+                                </div>
+                            </div>        
+                        </li>
                         <li>WOMANS<i class="material-icons md-16">expand_more</i></li>
                         <li>THE BRAND</li>
                         <li>LOCAL STORE<i class="material-icons md-16">expand_more</i></li>
                         <li>LOOK BOOK<i class="material-icons md-16">expand_more</i></li>
                     </ul>
-
+                    
                     <div class="searchBoxContainer">
                         <input class="search-txt" type="text" name="" placeholder="Search..">
                         <a href="#" class="searchButton">
@@ -51,8 +77,9 @@
                     </div>
                 </div>
             </nav>
+            
             <section class="headShowCase">
-                <img src="./img/sampleModel.png" alt="" class="backGroundPic">
+                <img src="/Trong Hiep/img/sampleModel.png" alt="" class="backGroundPic">
                 <a href="#cart" class="shoppingButtonContainer">
                     <h3>SHOP MEN'S COLLECTION</h3>
                 </a>

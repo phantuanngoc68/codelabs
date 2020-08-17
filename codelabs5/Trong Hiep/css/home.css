@@ -19,7 +19,7 @@ h1{
 }
 
 h2{
-
+    font-size: 2.6rem;
 }
 
 h3{
@@ -49,6 +49,7 @@ h3{
     background: #2f3640;
     color: white;
     position: sticky;
+    overflow: hidden;
 }
 
 .topBar{
@@ -83,13 +84,11 @@ h3{
 .cart i{
     padding: 0 1.5rem;
 }
-
 .navContainer{
     background: transparent;
     position: sticky;
     z-index: 0;
 }
-
 nav{
     width: 90%;
     margin: auto;
@@ -98,35 +97,28 @@ nav{
     align-items: center;
     padding: 3rem 0;
 }
-
 nav h1{
     flex: 1;
 }
-
 .navOptions{
     flex: 1;
     display: grid;
     grid-template-columns: 3fr 5rem 1fr;
 }
-
 nav ul{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     grid-column: 1/2;
 }
-
 .navOptions ul li{
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
-
 .navOptions ul li:hover{
     color: cyan;   
 }
-
-
 
 .searchBoxContainer{
     border: 0.1rem solid rgb(202, 202, 202);
@@ -175,5 +167,56 @@ nav ul{
 .shoppingButtonContainer h3{
     padding: 1.6rem 3.2rem;
     border: 0.1rem solid black;
+}
+
+#sub-menu-1{
+    position: absolute;
+    margin-top: 4rem;
+    width: 35rem;
+    display: grid;
+    padding: 3rem 2.5rem 3rem 2.5rem;
+    background: white;
+    box-shadow: rgba(158, 158, 158, 0.867);
+    grid-template-columns: 1fr 4rem 1fr;
+    grid-template-rows: 1.2fr 1fr;
+}
+#sub-menu-1 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background: transparent;
+    color: black;
+}
+#sub-menu-1 ul > :first-child{
+    font-weight: bolder;
+    margin-bottom: 1.4rem;
+}
+#sub-menu-1 ul > :first-child:hover{
+    color: black;
+}
+#sub-menu-1 ul li{
+    font-weight: lighter;
+    margin: 0.5rem 0;
+}
+#sub-menu-1 .sub-left{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#sub-menu-1 .sub-right{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#sub-menu-1 .sale-off-noti{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 2rem 3rem 2rem;
+    margin-top: 2rem;
+    color: white;
+    background: #333333;
 }
 
