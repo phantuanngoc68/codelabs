@@ -1,3 +1,5 @@
+/* format code: ALt + Ctrl + L */
+
 html{
     font-size: 62.5%;
 }
@@ -105,7 +107,7 @@ header{
 
 .navContainer{
     height: 100vh;
-    background-image: url(/Trong\ Hiep/img/sampleModel.png);
+    background-image: url(/Trong_Hiep/img/sampleModel.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,7 +199,7 @@ nav ul{
 }
 
 
-#sub-menu-1{
+.sub-menu-1{
     position: absolute;
     z-index: 2;
     margin-top: 4rem;
@@ -209,34 +211,34 @@ nav ul{
     grid-template-columns: 1fr 4rem 1fr;
     grid-template-rows: 1.2fr 1fr;
 }
-#sub-menu-1 ul{
+.sub-menu-1 ul{
     display: flex;
     flex-direction: column;
     justify-content: left;
     background: transparent;
     color: black;
 }
-#sub-menu-1 ul > :first-child{
+.sub-menu-1 ul > :first-child{
     font-weight: bolder;
     margin-bottom: 1.4rem;
 }
-#sub-menu-1 ul > :first-child:hover{
+.sub-menu-1 ul > :first-child:hover{
     color: black;
 }
-#sub-menu-1 ul li{
+.sub-menu-1 ul li{
     font-weight: lighter;
     margin: 0.5rem 0;
 }
-#sub-menu-1 .sub-left{
+.sub-menu-1 .sub-left{
     grid-column: 1/2;
     grid-row: 1/2;
 }
-#sub-menu-1 .sub-right{
+.sub-menu-1 .sub-right{
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
-#sub-menu-1 .sale-off-noti{
+.sub-menu-1 .sale-off-noti{
     grid-column: 1/4;
     grid-row: 2/3;
     display: flex;
