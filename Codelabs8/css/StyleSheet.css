@@ -486,7 +486,13 @@ li>a {
   .footer-content__container {
       padding: 56px 0;
   }
-  .footer_content {
+    .bottom-bar__right {
+        right:0;
+    }
+    .bottom-bar__trademark {
+        left:0;
+    }
+    .footer_content {
       text-align:center;
       display:block;
   }
