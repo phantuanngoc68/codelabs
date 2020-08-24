@@ -26,7 +26,10 @@ h3{
     font-size: 1.6rem;
 }
 
-.topBar li, a{
+h4{
+    
+}
+.topBar li, a, small{
     font-size: 1rem;
     font-weight: 400;
     color: white;
@@ -44,51 +47,71 @@ h3{
 .material-icons.md-13 { font-size: 1.3rem; }
 .material-icons.md-16 { font-size: 1.6rem; }
 .material-icons.md-21 { font-size: 2.1rem; }
+.material-icons.md-32 { font-size: 3.2rem; }
+
+header{
+    display: flex;
+    flex-direction: column;
+}
 
 .topBarContainer{
     background: #2f3640;
     color: white;
-    position: sticky;
     overflow: hidden;
+    width: 100%;
 }
 
 .topBar{
     width: 60%;
     margin: auto;
-    min-height: 4.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 4.5rem;
 }
 
+
 .currency{
-    flex: 2;
+    flex: 1.8;
     float: left;
 }
 
-.topBar ul{
+.topBarOption{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex: 1;
 }
 
+
+.cart-icon{
+    display: none;
+    background: rgb(69, 199, 238);
+    padding: 0 1.5rem;
+    height: 4.5rem;
+    align-items: center;
+}
+
 .cart{
     background: rgb(69, 199, 238);
-    min-height: 4.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5rem;
+    height: 4.5rem;
 }
 .cart i{
     padding: 0 1.5rem;
 }
+
 .navContainer{
-    background: transparent;
-    position: sticky;
-    z-index: 0;
+    height: 100vh;
+    background-image: url(/Trong\ Hiep/img/sampleModel.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
+
 nav{
     width: 90%;
     margin: auto;
@@ -102,14 +125,15 @@ nav h1{
 }
 .navOptions{
     flex: 1;
-    display: grid;
-    grid-template-columns: 3fr 5rem 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav ul{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    grid-column: 1/2;
+    flex: 2;
 }
 .navOptions ul li{
     display: flex;
@@ -120,16 +144,22 @@ nav ul{
     color: cyan;   
 }
 
+#menu-icon{
+    display: none;
+}
+
 .searchBoxContainer{
     border: 0.1rem solid rgb(202, 202, 202);
+    background: transparent;
+    height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-column: 3/4;
+    flex: 1;
+    margin-left: 5rem;
 }
 
-.searchBoxContainer input{
-    width: 15rem;
+.search-txt{
     border: none;
     outline: none;
     background: transparent;
@@ -137,40 +167,39 @@ nav ul{
     font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
     color: rgb(95, 95, 95);
+    flex: 2;
 }
 
-.searchBoxContainer i{
+.searchButton{
     color: rgb(202, 202, 202);
-    height: 1.522rem;
-    width: auto;
     padding: 0.5rem 0.8rem;
-}
-
-.headShowCase img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    z-index: -1;
+    flex: 1;
 }
 
 .shoppingButtonContainer{
-    text-decoration: none;
     color: black;
     background: transparent;
     position: absolute;
-    top: 55rem;
-    right: 25rem;
+    border: 0.2rem solid black;
+    top: 60rem;
+    left: 85rem;
+    z-index: 1;
+}
+.shoppingButtonContainer h3{
+    position: relative;
+    padding: 1.6rem 3.2rem;
+    font-family: "Montserrat", sans-serif;
+}
+.shoppingButtonContainer:hover{
+    background: rgb(75, 75, 75);
+    color: white;    
+    border: 0.2rem solid white;
 }
 
-.shoppingButtonContainer h3{
-    padding: 1.6rem 3.2rem;
-    border: 0.1rem solid black;
-}
 
 #sub-menu-1{
     position: absolute;
+    z-index: 2;
     margin-top: 4rem;
     width: 35rem;
     display: grid;
@@ -220,3 +249,101 @@ nav ul{
     background: #333333;
 }
 
+@media only screen and (max-width: 1300px){
+    .searchBoxContainer{
+        display: none;
+    }
+
+    .shoppingButtonContainer{
+        left: 75rem;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1299px){
+    .currency{
+        flex: 1;
+    }
+    .shoppingButtonContainer{
+        left: 65rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .currency{
+        flex: 0.8;
+    }
+    #logo{
+        font-size: 1.6rem;
+    }
+    .shoppingButtonContainer{
+        left: 46rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #logo{
+        font-size: 1.6rem;
+    }
+    .topBar{
+        width: 80%;
+    }
+    .cart{
+        display: none;
+    }
+    .cart-icon{
+        display: flex;
+    }
+
+    nav{
+        width: 80%;
+    }
+    .navOptions{
+        display: none;
+    }
+    #menu-icon{
+        display: flex;
+    }
+
+    .currency li small{
+        display: none;
+    }
+    .currency{
+        flex: 2;
+    }
+
+    .shoppingButtonContainer{
+        top: 65rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 24rem;
+    }
+    .shoppingButtonContainer h3{
+        padding: 1.4rem 2.4rem;
+        font-size: 1.4rem;
+        min-width: 24rem;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .currency{
+        flex: 1.5;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .currency{
+        flex: 0.7;
+    }
+}
+
+@media screen and (max-width: 319px){
+    *{
+        display: none;
+    }
+}
+
+main{
+    background: #2f3640;
+    height: 100vh;;
+}
