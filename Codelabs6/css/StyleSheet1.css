@@ -1,11 +1,12 @@
-﻿@font-face {
+﻿/*@font-face {
     font-family: 'fontawesome';
     src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-}
+
+}*/
 body, html
 {
     margin: 0px;
-    font-family: fontawesome, Arial, Helvetica, sans-serif;
+    font-family:  Arial, Helvetica, sans-serif;
     user-select: none;
     height:100%;
 }
@@ -154,14 +155,22 @@ body, html
 .subMenu li a {
     line-height: 2;
     font-weight:normal;
+    color: #727272;
 }
 .subMenu li a:hover {
     color:#00cccc;
 }
 .subMenu h5 {
     font-size: 1em;
+    color: #575153;
 }
-
+.subMenu li {
+     color: #575153;
+}
+.overflowed_submenu {
+    right:0px!important;
+    left:auto!important;
+}
 .sectionNav>ul>li:hover div {
     display: block;
 } 
@@ -265,4 +274,14 @@ body, html
     text-decoration:none;
     display:inline-block;
     margin: 15px 0px;
+}
+
+.footer_content {
+    padding: 45px 21.46%;
+}
+
+.footer_division {
+    width:19%;
+    margin-left:0;
+    padding-left:1%;
 }
