@@ -1,0 +1,287 @@
+﻿/*@font-face {
+    font-family: 'fontawesome';
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+}*/
+body, html
+{
+    margin: 0px;
+    font-family:  Arial, Helvetica, sans-serif;
+    user-select: none;
+    height:100%;
+}
+
+* {
+    transition: 0.15s;
+}
+
+.topBar
+{
+    background: #333333;
+    color: #999999;
+    height: 45px;
+    vertical-align: middle;
+}
+.topBar>span {
+    margin: 0px;    
+    line-height: 45px;
+    position: relative;
+    left: 49.99%;
+    height:45px;
+    display: inline-block;
+    cursor: pointer;
+    }
+.topBar>span>span:hover {
+    color:white;
+}
+.topBar>#currency {
+    left: 21.46%;
+}
+.topBar>#currency:hover {
+    color:white;
+}
+.topBar>span>span{
+    padding: 0px 20px;
+    cursor: pointer;
+}
+#cart
+{
+    color: #ffffff;
+    background: #00cccc;    
+    height:45px;
+    display: inline-block;
+
+}
+
+.mainSection {
+    background-image: url("../img/photo.png");
+    background-repeat: no-repeat;   
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 3.2%;
+    top: 80px;
+}
+.mainSection>.websiteLogo
+{
+    position: relative;
+    top: 40px;
+    left: 6.5%;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+.websiteLogo>span{
+    font-weight:normal;
+    padding: 0px 2px;
+}
+.sectionNav
+{
+    right:  0%;
+    position: absolute;
+    width:50%;
+
+}
+.sectionNav>ul {
+    padding: 0px;
+    display:inline-block;
+    width: 61.5%;
+    margin:0px;
+    height:53px;
+    min-width: 406px;
+}
+.sectionNav>ul>li 
+{
+    display: inline-block;
+    list-style: none;
+    padding-right: 2%;
+    padding-top:19px;
+    padding-bottom:19px;
+    font-weight: bold;  
+    font-size: 0.8em;
+    cursor: pointer;    
+    position:relative;
+ 
+}
+.sectionNav>ul>li>a:hover, .sectionNav>ul>li>div:hover .sectionNav>ul>li
+{
+    color: #00c8c8;
+}
+
+.sectionNav>ul>li>div {
+    z-index:1;
+    display: none;
+    position:absolute;
+    top:49px;
+    width:467px;
+    padding-right:0.75%;
+    left:0px;
+    box-shadow:         1px 11px 16px 0px rgba(50, 50, 50, 0.45);
+    background:white;
+}
+
+.sectionNav>ul>li>div>div {
+    margin:7.5%;
+}
+.sectionNav>ul>li>div>div>img {
+    width:100%;
+}
+.sectionNav>ul>li>div>div>h1 {
+    position:absolute;
+    bottom:20%;
+    text-align:center;
+    width:85%;
+    color:white;
+    font-size: 300%;
+}
+.sectionNav>ul>li>div>div>p {
+    color:white;
+    position:absolute;
+    bottom:10%;
+    text-align:center;
+    font-size:300%;
+    width:85%;
+}
+.subMenu {
+    display:inline-block;
+    width:41%;
+    float:left;
+    margin-left:7.5%;
+    list-style:none;
+    padding-left:0px;
+    margin-bottom:7.5%;
+}
+.subMenu li a {
+    line-height: 2;
+    font-weight:normal;
+    color: #727272;
+}
+.subMenu li a:hover {
+    color:#00cccc;
+}
+.subMenu h5 {
+    font-size: 1em;
+    color: #575153;
+}
+.subMenu li {
+     color: #575153;
+}
+.overflowed_submenu {
+    right:0px!important;
+    left:auto!important;
+}
+.sectionNav>ul>li:hover div {
+    display: block;
+} 
+
+.sectionNav>ul>li>div:hover {
+    display:block;
+}
+.sectionNav>input
+{
+    float:right;
+    width:30%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right:6.5%;
+    margin-left:0px;
+    box-shadow:         1px 2px 4px 0px rgba(50, 50, 50, 0.5);
+}
+.shopButton{
+    border: 2px solid gray;
+    display: inline-block;
+    top:85%;
+    right: 15%;
+    cursor: pointer;
+    padding: 20px 30px;
+    position: absolute;
+
+}
+#listingSection {
+    left: 6.5%;
+    right: 6.5%;
+    width: 87%;
+    border-top: 1px solid #00c8c8;
+}
+.listingContainer {
+    margin: 0% 6.5%;
+    padding-top: 50px;
+}
+.listingContainer>div {
+    display:inline-block;
+    cursor:pointer
+}
+.marginLeft {
+    margin-left: 2.5%;
+}
+.small {
+    width:25%;
+}
+.big {
+    width:44%;
+}
+.top {
+    float:left;
+}
+.listingContainer>div>img {
+    width:100%;
+}
+#signUp
+{
+    background-image: none;
+    height:42px;
+}
+.signUpsection {
+    margin: 0% 21.46%;
+}
+.signUpsection>div {
+    width:41.6%;
+    margin-top: 30px;
+    display:inline-block;
+    top:0px;
+    float:left;
+    padding-right:30px;
+    margin-bottom: 30px;
+}
+.signUpsection>div:first-child {
+    border-right: 1px solid #eeeeee;
+}
+#registerBox {
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+.signUpsection>div>h3, .signUpsection>div>input{
+    display:block;
+    margin-bottom: 30px;
+    width:100%;
+}
+.signUpsection>div>span {
+    color:white;
+    background: #00cccc;
+    display:inline-block;
+    letter-spacing:2.5;
+    padding: 15px;
+    text-decoration:none;
+}
+.signUpsection>div>span>a {
+    text-decoration:none;
+    color:white;
+}
+.signUpsection>div>a {
+    float:right;
+    color: #00cccc;
+    text-decoration:none;
+    display:inline-block;
+    margin: 15px 0px;
+}
+
+.footer_content {
+    padding: 45px 21.46%;
+}
+
+.footer_division {
+    width:19%;
+    margin-left:0;
+    padding-left:1%;
+}
