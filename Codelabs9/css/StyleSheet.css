@@ -50,6 +50,21 @@ li > a {
     position: absolute;
     left: 21.46%;
 }
+.currency--list {
+    display:inline-block;
+    position:absolute;
+    height:135px;
+    overflow:auto;
+}
+.currency--list>li {
+    display:none;
+}
+#currency--display {
+    display:inline-block!important;
+}
+.currency--list:hover li{
+    display:inline-block;
+}
 
 .top-bar__item {
     display: inline-block;
@@ -58,8 +73,11 @@ li > a {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
+    background:#333333;
 }
-
+span.top-bar__item {
+    position:relative;
+}
     .top-bar__item:hover {
         color: #00c8c8;
         background: #f8f8f8;

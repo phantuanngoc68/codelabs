@@ -38,6 +38,10 @@
      $(".owl-carousel").owlCarousel();
 })
 
+//Currency select
+$("li.top-bar__item").click(function(){
+    $("#currency--display").text($(this).text());
+})
 //OWL CAROUSEL
 $('.owl-carousel').owlCarousel({
     loop:true,
