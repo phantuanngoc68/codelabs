@@ -7,6 +7,7 @@ html{
     margin: 0;
     box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
     width: 1rem;
     height: auto;
@@ -75,10 +76,14 @@ html{
     display: block;
 }
 
-nav{
+.menu{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    bottom: 0;
+}
+
+nav{
     height: 4.4rem;
 }
 
@@ -114,10 +119,8 @@ nav ul li:hover{
 }
 
 .leftMenu {
-    position: fixed;
-    left: 0;
     width: 25rem;
-    height: 64.5rem;
+    height: 71rem;
     background-color: rgb(238, 238, 238);
     
     color: rgb(19, 18, 18);
@@ -128,15 +131,11 @@ nav ul li:hover{
     overflow-y: scroll;
     overflow-x: hidden;
     padding-top: 2rem;
-
-    order: 1;
 }
 
 .leftMenu ul h2{
     padding: 0 0 0 1.5rem;
-    width: inherit;
-    font-weight: 400;
-
+    font-weight: 40rem;
     list-style: none;
 }
 
@@ -155,7 +154,6 @@ nav ul li:hover{
 }
 
 .tutoialBoard{
-    order: 2;
 }
 
 .board{
@@ -166,5 +164,4 @@ nav ul li:hover{
 
 
 .advertisement{
-    order: 3;
 }
